@@ -9,7 +9,7 @@
 <body>
     <button id="revelar" onclick="revealPage()">Revelar Pagina</button>
     <audio id="tyler" autoplay loop>
-        <source src="naoencheporra/manotylerlorena.mp3" type="audio/mp3">
+        <source src="naoencheporra/tylerocriador.mp3" type="audio/mp3">
     </audio>
 
     <main id="main-content">
@@ -29,11 +29,14 @@
 
     <script>
         function revealPage(){
-            var mainContent = document.getElementById("main-content");
-            var botao = document.getElementById("revelar");
+
+        var mainContent = document.getElementById("main-content");
+        var botao = document.getElementById("revelar");
             botao.style.display = "none"
             mainContent.style.display = "block";
-
+        var audioElement = document.getElementById('tyler');
+            audioElement.volume = 0.7;
+             audioElement.play();
             
         }
     </script>
