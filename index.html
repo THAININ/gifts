@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="naoencheporra/style.css">
 </head>
 <body>
+    <button id="revelar" onclick="revealPage()">Revelar Pagina</button>
     <audio id="tyler" autoplay loop>
         <source src="naoencheporra/manotylerlorena.mp3" type="audio/mp3">
     </audio>
 
-    <main>
+    <main id="main-content">
         <h1>Feliz Aniversariooo</h1>
         <h2>(mesmo que bem atrasado)...</h2>
         <p>meio sem criatividade fazer isso dnv mass...</p>
@@ -27,7 +28,14 @@
     </main>
 
     <script>
-        
+        function revealPage(){
+            var mainContent = document.getElementById("main-content");
+            var botao = document.getElementById("revelar");
+            botao.style.display = "none"
+            mainContent.style.display = "block";
+
+            
+        }
     </script>
     
 </body>
